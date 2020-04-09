@@ -3,6 +3,7 @@ import thunk from 'redux-thunk';
 import rootReducer from './../reducers/main.js';
 import exampleVideoData from '../data/exampleVideoData.js';
 
+
 let initialState = {
   videoList: [],
   currentVideo: null
@@ -16,11 +17,6 @@ let store = createStore(rootReducer, initialState, applyMiddleware(thunk));
 store.dispatch({
   type: 'CHANGE_VIDEO_LIST',
   videos: exampleVideoData
-});
-
-store.dispatch({
-  type: 'CHANGE_VIDEO',
-  video: exampleVideoData[0]
 });
 
 export default store;
