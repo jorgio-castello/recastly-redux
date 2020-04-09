@@ -4,8 +4,8 @@ import rootReducer from './../reducers/main.js';
 import exampleVideoData from '../data/exampleVideoData.js';
 
 let initialState = {
-  videos: [],
-  video: {}
+  videoList: [],
+  currentVideo: null
 };
 
 
@@ -19,26 +19,3 @@ store.dispatch({
 });
 
 export default store;
-
-/*
-  initialState = {
-    videoList: [],
-    currentVideo: {}
-  }
-
-
-  videoListReducer
-    //We accept state we are accepting the whole object
-    case CHANGE_VIDEO_LIST:
-      return {
-        ...state,
-        videoList: action.videos
-      }
-
-  videoReducer
-      case CHANGE_CURRENT_VIDEO:
-        return {
-          ...state,
-          currentVideo: action.video
-        }
-*/
