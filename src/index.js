@@ -14,7 +14,19 @@ import { Provider } from 'react-redux';
 
 ReactDOM.render(
   <Provider store = {store} >
-    <App searchYouTube={handleVideoSearch} />
+    <App searchYouTube={q => store.dispatch(handleVideoSearch(q))} />
   </Provider>,
   document.getElementById('app')
 );
+
+//handleVideoSearch => dispatch(handleVideoSearch)
+//function(dispatch) {
+//   function(q) {
+//     dispatch(handleVideoSearch(q))
+//   }
+// }
+
+//dispatch(handleVideoSearch(q));
+// q => dispatch(handleVideoSearch(q))
+
+

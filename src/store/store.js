@@ -18,4 +18,9 @@ store.dispatch({
   videos: exampleVideoData
 });
 
+store.dispatch({
+  type: 'CHANGE_VIDEO',
+  video: exampleVideoData[0]
+});
+
 export default store;

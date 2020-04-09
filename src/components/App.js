@@ -19,7 +19,8 @@ class App extends React.Component {
 
   //compontDidMount: should this be invoking dispatch(handleSearch('react tutorials))
   componentDidMount() {
-    this.props.searchYouTube('react tutorials');
+    debugger;
+    this.props.searchYouTube('hack reactor');
   }
 
   // //handleVideoListEntryTitleClick(video) {

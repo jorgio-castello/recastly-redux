@@ -7,7 +7,7 @@ let mapStateToProps = state => {
   };
 };
 
-var VideoPlayerContainer = connect(mapStateToProps, null)(VideoPlayer);
+var VideoPlayerContainer = connect(mapStateToProps)(VideoPlayer);
 
 //TODO: define a VideoPlayerContainer component which will hook up your action
 //dispatchers with your VideoPlayer component props.
